@@ -3,7 +3,7 @@ from sqlalchemy import create_engine
 def load_weather(df):
     #create connection to your PostgreSQL database
 
-    engine = create_engine("postgresql://postgres:postgres123@localhost:5432/weather_db")
+    engine = create_engine("postgresql://postgres:PASSWORD@localhost:5432/weather_db")
 
 
     #write a dataframe to a table called "weather"
